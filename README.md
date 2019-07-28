@@ -6,6 +6,12 @@ The tool can be used with missions of copyprotected DLC campaigns as well.
 The copy protection is not circumvented with this tool.
 All clients/players are still required to have a purchased license of that DLC campaign.
 
+## Download
+
+Either compile the source code with Visual Studio or download a precompiled executable here:
+
+https://drive.google.com/open?id=1pqKflZaAkdw_mAOhSlpCsKup3NyI4ld9
+
 ## Disclaimer
 
 This tool DOES NOT circumvent any DCS copy protection. If you tweak a mission of a copyprotected DLC campaign, all joining clients are still required to have the original DLC campaign installed. Otherwise they won't be able to join.
