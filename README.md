@@ -32,6 +32,10 @@ Only the first <numberofclients> units will be converted to clients.
 The tool does not yet increase the number of existing units within the group.
 If the group has fewer units than the specified <numberofclients>, only the existing units of that group are converted to clients.
 
+## Requirements
+
+This tool runs on Windows with Microsoft .Net Framework 4.5 or higher installed.
+
 ## Planned improvements
 
 1. Changing airframe
