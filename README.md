@@ -48,4 +48,8 @@ a few options will be provided to give the user some choice.
 
 4. GUI
 
-Feel free to contribute to this tool.
+For the users who like a nice GUI, there will be one.
+
+## Contributions
+
+Feel free to contribute to this tool. Add issues if you find any bugs and or create pull requests for enhancements/fixes.
