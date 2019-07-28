@@ -6,7 +6,13 @@ The tool can be used with missions of copyprotected DLC campaigns as well.
 The copy protection is not circumvented with this tool.
 All clients/players are still required to have a purchased license of that DLC campaign.
 
-*Attention:*
+## Disclaimer
+
+This tool DOES NOT circumvent any DCS copy protection. If you tweak a mission of a copyprotected DLC campaign, all joining clients are still required to have the original DLC campaign installed. Otherwise they won't be able to join.
+
+As this tool does not circumvent the copyprotection, Eagle Dynamics is ok with it. I have permission from them to publish it. If you want to know, how it works, see blow.
+
+## Limitations
 
 Quite a few missions use SPACE BAR triggers in order to advance the mission progress.
 Due to this reason, one of the players/clients must also host the mission.
@@ -15,7 +21,7 @@ This hosting player is able to hit the SPACE BAR.
 A few missions also use conditions/triggers based on specific cockpit dials or switches.
 Again, those conditions/triggers will only work for the hosting player.
 
-Usage:
+## Usage
 
 ```
 dcsmissiontweak.exe <path_to_missionfile.miz> <numberofclients>
@@ -26,7 +32,7 @@ Only the first <numberofclients> units will be converted to clients.
 The tool does not yet increase the number of existing units within the group.
 If the group has fewer units than the specified <numberofclients>, only the existing units of that group are converted to clients.
 
-Planned improvements:
+## Planned improvements
 
 1. Changing airframe
 
@@ -49,6 +55,10 @@ a few options will be provided to give the user some choice.
 4. GUI
 
 For the users who like a nice GUI, there will be one.
+
+## How does it work?
+
+Essentially, miz-files are just zip archives. The file "mission" within the archive is a *lua* config file. This file contains all units. The tool simply parses this config file and updates those units. The method also works with copyprotected missions because only the triggers/conditions, scripts, behavior has been extracted into an encrypted file (extension .crypt) located side-by-side with the mission files. The miz file contains a reference to that file. This reference is not touched by the tool. The encryption mechanism does not include any checksums for the mission file itself or other content within the miz archive. This allows modifying it without breaking the copy protection. It also allows placing that miz file anywhere - even downloading from a DCS server). Upon loading that miz file, the referenced encrypted and protected file is being loaded as well. If that encrypted file cannot be located (e.g. client does not have a license of that DLC campaign or did not install it in his DCS version), that user is unable to join the mission.
 
 ## Contributions
 
