@@ -13,6 +13,7 @@ Either compile the source code with Visual Studio or download a precompiled exec
 https://drive.google.com/open?id=1pqKflZaAkdw_mAOhSlpCsKup3NyI4ld9
 
 SHA1: 84081c37f52b371e1aa72c8bad817c699aac50d9
+
 SHA256: 8051d4d1d67768a804bfe1444b1341eaf260e2cd100e35dd1e7de399b75e2873
 
 The compiled executable is not signed. Windows will warn you when you try to execute it. You need to "accept the risk".
